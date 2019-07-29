@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a routerLink="/home">NG-Mateial</a>
+    </div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxHide.xs>
+        <ul fxLayout fxLayoutGap="50px" class="navigation-items">
+            <li>
+                <a routerLink="/home">Home</a>
+            </li>
+            <li>
+                <a routerLink="/about">About</a>
+            </li>
+            <li>
+                <a routerLink="/angular">Angular</a>
+            </li>
+            <li>
+                <a routerLink="/contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <li>
+                <a routerLink="/profile">
+                    <mat-icon>account_circle</mat-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>
